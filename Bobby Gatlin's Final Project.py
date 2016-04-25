@@ -87,6 +87,8 @@ def main():
                   stuck = False
 
 main()
+
+k=input("Press close to exit")
           
           
           
