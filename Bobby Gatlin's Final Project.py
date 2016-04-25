@@ -26,12 +26,12 @@ def get_choice(room,dir):
 def main():
     dirs = (0,0,0,0)
 
-    livingroom = {'name':'Living Room','directions':dirs,'msg':''}
-    kitchen = {'name':'Kitchen and Dining Room','directions':dirs,'msg':''}
-    hall = {'name':'Hall','directions':dirs,'msg':''}
-    bathroom = {'name':'Bathroom','directions':dirs,'msg':''}
-    bedrooma = {'name':'Bedroom #1','directions':dirs,'msg':''}
-    bedroomb = {'name':'Bedroom #2','directions':dirs,'msg':''}
+    livingroom = {'name':'Living Room \n You swear everything is laughing as you. \n You feel your own sanity breaking as you bust into laughter along with the sofa and mounted deer head','directions':dirs,'msg':''}
+    kitchen = {'name':'Kitchen and Dining Room \n The room where you had to cut off your own hand after it went bad. \n At least now you have your trusty chainsaw hand','directions':dirs,'msg':''}
+    hall = {'name':'Hall \n You start to feel the darkness overtake you as if possessing your very soul. \n You regain your senses and shake it off','directions':dirs,'msg':''}
+    bathroom = {'name':'Bathroom \n Definitely the scariest room in the whole damn place. \n Whoever last used the john didn\'t flush ','directions':dirs,'msg':''}
+    bedrooma = {'name':'Bedroom #1 \n You pull out your boomstick and lay the smack down on a nasty deadite waiting for an ambush. \n You then decapitate it with your chainsaw hand','directions':dirs,'msg':''}
+    bedroomb = {'name':'Bedroom #2 \n Memories of your beloved Linda playing the piano flood into your mind. \n That was before you had to cut her head off in the woodshed..','directions':dirs,'msg':''}
 
     livingroom['directions'] = (kitchen,0,0,0)
     kitchen['directions'] = (hall,0,livingroom,bedrooma)
@@ -51,8 +51,8 @@ def main():
           'So find the book, say the passage (Klattu Barada Nikto), and end this for good this time.')
 
     while True:
-        if necronomicon_found and room['name'] == 'Living Room':
-            print('As you step into the room with the book in hand, you can\'t help but to feel the overwhelming presence of evil. \n' +
+        if necronomicon_found and room['name'] == 'Living Room \n You swear everything is laughing as you. \n You feel your own sanity breaking as you bust into laughter along with the sofa and mounted deer head':
+            print(' As you step into the room with the book in hand, you can\'t help but to feel the overwhelming presence of evil. \n' +
             'The whispers of the Deadites, coming to consume every thing you are, is deafening. "We\'ll swallow your soul..We\'ll swallow your soul..." \n' +
             'You open the book and say the words... Wait, what were those words again... "Klattu Barada Necktie, Nectarine, Nhhhmmmm... \n' +
             'You cough out a noise that slightly resembles the sound that you can vaguely remember. \n' +
@@ -63,7 +63,7 @@ def main():
             break;
         elif not necronomicon_found and room['name'] == room_with_necronomicon['name']:
               necronomicon_found = True
-              print(msg(room) + 'There it is. The damn book that started this thing... \n' +
+              print(msg(room) + ' There it is. The damn book that started this whole mess... \n' +
                     'The Necronomicon Ex Mortis...Book of the Dead. Inked in human blood and bound in human flesh, \n' +
                     'This book has ruined your life since the first time you saw it. \n'+
                     'Here\'s your chance to finish this. Get the book to the living room and recite the passage.')
